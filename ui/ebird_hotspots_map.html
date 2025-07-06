@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a85e4c12394565b75645117862bfad4f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a85e4c12394565b75645117862bfad4f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a85e4c12394565b75645117862bfad4f = L.map(
+                "map_a85e4c12394565b75645117862bfad4f",
+                {
+                    center: [36.07968787717391, -95.96157025],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0341ea11f28f74186c213789cd1adc1b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0341ea11f28f74186c213789cd1adc1b.addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            var circle_marker_b2c06c2594fa536c7c30073c4c2f648f = L.circleMarker(
+                [36.2349276, -95.9115887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_b2c06c2594fa536c7c30073c4c2f648f.bindTooltip(
+                `<div>
+                     56th Street N. Sod Farms (195 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6338b9acfe9cef6e0ab5f3c26169b205 = L.circleMarker(
+                [36.0260217, -95.9583838],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_6338b9acfe9cef6e0ab5f3c26169b205.bindTooltip(
+                `<div>
+                     Aquarium Trail (111 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d177e38c1cdae899bddaa8684ffe1540 = L.circleMarker(
+                [36.0318524, -95.9619498],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_d177e38c1cdae899bddaa8684ffe1540.bindTooltip(
+                `<div>
+                     Aquarium Trail--Arkansas River Overlook (89 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cd41ae4eb1ac213cb23eb45996353cf1 = L.circleMarker(
+                [35.9567375, -95.8866501],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_cd41ae4eb1ac213cb23eb45996353cf1.bindTooltip(
+                `<div>
+                     Arkansas River--Harmony Bridge (56 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca1e096002d9399aa2f210a8c2fd6f1a = L.circleMarker(
+                [36.1244608, -96.1156297],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_ca1e096002d9399aa2f210a8c2fd6f1a.bindTooltip(
+                `<div>
+                     Arkansas River--Hwy. 97 (94 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cdff5e29edee5de78df2ee8655dabb4 = L.circleMarker(
+                [36.081987, -96.009003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_1cdff5e29edee5de78df2ee8655dabb4.bindTooltip(
+                `<div>
+                     Bales Park Trails (38 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9b79072c64b924987b81843d225ebefd = L.circleMarker(
+                [35.9587293, -95.8418941],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_9b79072c64b924987b81843d225ebefd.bindTooltip(
+                `<div>
+                     Bixby Sod Farms (230 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0c52d555df63eeb905fb3e66e9ca44f0 = L.circleMarker(
+                [35.894126, -95.7987213],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_0c52d555df63eeb905fb3e66e9ca44f0.bindTooltip(
+                `<div>
+                     Bixhoma Lake (144 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4102b5951b28b8dc42096817f20aba42 = L.circleMarker(
+                [35.9566152, -96.0108698],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_4102b5951b28b8dc42096817f20aba42.bindTooltip(
+                `<div>
+                     Black Gold Park (11 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2506a7ebb46033772d4a036dc9ecc995 = L.circleMarker(
+                [36.1390184, -96.1267662],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_2506a7ebb46033772d4a036dc9ecc995.bindTooltip(
+                `<div>
+                     Case Community Park (90 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dfe8f5221b198bd562fabdd376f95b14 = L.circleMarker(
+                [36.13025, -96.076808],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_dfe8f5221b198bd562fabdd376f95b14.bindTooltip(
+                `<div>
+                     Chandler Park (96 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_192066606be2973d5f5f0e15890d6aa5 = L.circleMarker(
+                [35.9953128, -95.9884803],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_192066606be2973d5f5f0e15890d6aa5.bindTooltip(
+                `<div>
+                     Churchill Park Trail (74 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_86648d085c8f9340d06848cc116c21ea = L.circleMarker(
+                [35.9380263, -95.8884795],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_86648d085c8f9340d06848cc116c21ea.bindTooltip(
+                `<div>
+                     Elsie's Walking Trail (97 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_daad6b5baeb16047e6eb8c84ca381406 = L.circleMarker(
+                [36.1095883, -95.9911108],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_daad6b5baeb16047e6eb8c84ca381406.bindTooltip(
+                `<div>
+                     Elwood Playing Fields (44 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_051f333bf884c288273b891abb8c2b03 = L.circleMarker(
+                [36.0684961, -95.8354832],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_051f333bf884c288273b891abb8c2b03.bindTooltip(
+                `<div>
+                     Floral Haven Memorial Gardens (63 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b70da6bad3df7936c92880b2582584c6 = L.circleMarker(
+                [36.0280525, -95.9666759],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_b70da6bad3df7936c92880b2582584c6.bindTooltip(
+                `<div>
+                     Flycatcher Trail Outdoor Classroom and Demonstration Garden (99 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_34d50689f6ae4cc2f288795e919f71a9 = L.circleMarker(
+                [36.1238199, -95.9849871],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_34d50689f6ae4cc2f288795e919f71a9.bindTooltip(
+                `<div>
+                     Gathering Place (140 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b835095ecc753171fe2a0602b1e329db = L.circleMarker(
+                [36.1772975, -96.023984],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_b835095ecc753171fe2a0602b1e329db.bindTooltip(
+                `<div>
+                     Gilcrease Museum (67 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6adc1a937d8ba54b592b646556467734 = L.circleMarker(
+                [35.9855308, -96.0152246],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_6adc1a937d8ba54b592b646556467734.bindTooltip(
+                `<div>
+                     Glenpool Walmart Retention Pond (23 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_961de0f39dbff2a3f294dcb325d7804f = L.circleMarker(
+                [35.9940814, -95.8502327],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_961de0f39dbff2a3f294dcb325d7804f.bindTooltip(
+                `<div>
+                     Haikey Creek Park (172 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7fe4557feef11c89ed6fcd5c21bb95d8 = L.circleMarker(
+                [36.0535149, -95.9749471],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_7fe4557feef11c89ed6fcd5c21bb95d8.bindTooltip(
+                `<div>
+                     Helmerich Park (110 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49b668c16774ab709bab7f3159befd14 = L.circleMarker(
+                [36.112106, -95.921343],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_49b668c16774ab709bab7f3159befd14.bindTooltip(
+                `<div>
+                     Highland Park (17 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c742b211ec42eaafc2a5d7b49988aca5 = L.circleMarker(
+                [36.1174784, -95.9273763],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_c742b211ec42eaafc2a5d7b49988aca5.bindTooltip(
+                `<div>
+                     Hunter Park (43 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_858248cdd3d5ce3fe95e942a484f958f = L.circleMarker(
+                [36.0289773, -95.9110486],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_858248cdd3d5ce3fe95e942a484f958f.bindTooltip(
+                `<div>
+                     Hunter Park (106 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_427dcc07de57c67b05139f5079cb60a7 = L.circleMarker(
+                [35.9665448, -95.8151579],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_427dcc07de57c67b05139f5079cb60a7.bindTooltip(
+                `<div>
+                     Indian Springs Sports Complex (60 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8c147f08d58ebf8117c420fc79690d02 = L.circleMarker(
+                [36.0507067, -95.9692365],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_8c147f08d58ebf8117c420fc79690d02.bindTooltip(
+                `<div>
+                     Joe Creek Trail (35 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f4a3f8b4a519a819ac157834a6bf0872 = L.circleMarker(
+                [36.1610166, -95.9901827],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_f4a3f8b4a519a819ac157834a6bf0872.bindTooltip(
+                `<div>
+                     John Hope Franklin Reconciliation Park (14 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0519bfa589dc494a318e494d93e7f107 = L.circleMarker(
+                [35.9863522, -96.1068991],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_0519bfa589dc494a318e494d93e7f107.bindTooltip(
+                `<div>
+                     Kellys Lane Park (75 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_82aee83add329bb0be83f5e067e61e7f = L.circleMarker(
+                [35.9481438, -96.0614703],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_82aee83add329bb0be83f5e067e61e7f.bindTooltip(
+                `<div>
+                     Kiefer Park (11 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e9a7d68cf12a428c14f37fe0ac542cfb = L.circleMarker(
+                [36.026872, -95.8972174],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_e9a7d68cf12a428c14f37fe0ac542cfb.bindTooltip(
+                `<div>
+                     Kingsbury Pond (104 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b1d48465ee2aef16dc1fe8d1a1798e02 = L.circleMarker(
+                [36.0829808, -95.9178808],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_b1d48465ee2aef16dc1fe8d1a1798e02.bindTooltip(
+                `<div>
+                     Lafortune Park (108 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f6da47c8c0f5ac07fc15574a3ab8b6e0 = L.circleMarker(
+                [35.8617858, -96.096466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_f6da47c8c0f5ac07fc15574a3ab8b6e0.bindTooltip(
+                `<div>
+                     Lake Boren (6 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d49703939b221fd8ca9237e536ccda25 = L.circleMarker(
+                [35.8754561, -96.1111994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_d49703939b221fd8ca9237e536ccda25.bindTooltip(
+                `<div>
+                     Lake Jackson (8 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_be4af09fb3b72238954aed9223500a0e = L.circleMarker(
+                [36.0331897, -96.15284],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_be4af09fb3b72238954aed9223500a0e.bindTooltip(
+                `<div>
+                     Lake Sahoma (152 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_747b91ff7991e1c88fa7aaffc0f0fc55 = L.circleMarker(
+                [36.032012, -96.1737129],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_747b91ff7991e1c88fa7aaffc0f0fc55.bindTooltip(
+                `<div>
+                     Lake Sahoma--161st W. Ave (109 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9376cb0f95f99a3a4f403b9da0153309 = L.circleMarker(
+                [36.215678, -95.933325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_9376cb0f95f99a3a4f403b9da0153309.bindTooltip(
+                `<div>
+                     Lake Yahola--Monument Point (231 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_de346c0e1fa1f6e610d1e01544a50724 = L.circleMarker(
+                [36.056654, -95.8892727],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_de346c0e1fa1f6e610d1e01544a50724.bindTooltip(
+                `<div>
+                     Leake Park (54 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e4c873bf9293eb5003ba11bbc7dc677c = L.circleMarker(
+                [35.9408027, -95.7971334],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_e4c873bf9293eb5003ba11bbc7dc677c.bindTooltip(
+                `<div>
+                     Leonard Sod Farm (180 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e5b4be918312febb8f633f2a5e1ef5e = L.circleMarker(
+                [36.0220987, -95.8479452],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_4e5b4be918312febb8f633f2a5e1ef5e.bindTooltip(
+                `<div>
+                     Liberty Trail Wetlands (108 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b6f135b8058dab6f14b67310d0cd9da = L.circleMarker(
+                [36.0172067, -95.74983],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_7b6f135b8058dab6f14b67310d0cd9da.bindTooltip(
+                `<div>
+                     Liberty Trail--New Orleans St. (67 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_be5189db6dbf4b10a4747e568c8275ff = L.circleMarker(
+                [36.051302, -95.861763],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_be5189db6dbf4b10a4747e568c8275ff.bindTooltip(
+                `<div>
+                     Life Way Park (50 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6cdb33ede7e93ca9075a08114a2ee25f = L.circleMarker(
+                [36.0088481, -95.9348488],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_6cdb33ede7e93ca9075a08114a2ee25f.bindTooltip(
+                `<div>
+                     Louisville Ave. Pond (47 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bd16b12a4de76ac8f643ce87a6c31986 = L.circleMarker(
+                [36.1273683, -95.7692549],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_bd16b12a4de76ac8f643ce87a6c31986.bindTooltip(
+                `<div>
+                     Lynn Lane Reservoir & area (191 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b2fca581678930977008bef8ee9f4f9 = L.circleMarker(
+                [36.0848807, -95.8836613],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_7b2fca581678930977008bef8ee9f4f9.bindTooltip(
+                `<div>
+                     Memorial Park Cemetery (130 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a6f2dcd15e1fc8aa90637d4643c059e = L.circleMarker(
+                [36.1216876, -95.9843731],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_0a6f2dcd15e1fc8aa90637d4643c059e.bindTooltip(
+                `<div>
+                     Midland Valley Trail (145 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f61a6bde675620b60510c03e85fa12ec = L.circleMarker(
+                [36.1104291, -95.9105694],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_f61a6bde675620b60510c03e85fa12ec.bindTooltip(
+                `<div>
+                     Mitchell Park (6 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0c6cfdf49756e9cefd6c2dee986057a = L.circleMarker(
+                [36.2209416, -95.9055376],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_e0c6cfdf49756e9cefd6c2dee986057a.bindTooltip(
+                `<div>
+                     Mohawk Park (222 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b1df5381df0947cc01c3aab032b3669c = L.circleMarker(
+                [36.2213571, -95.9341192],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_b1df5381df0947cc01c3aab032b3669c.bindTooltip(
+                `<div>
+                     Mohawk Park--Lake Yahola (261 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_80e53fb32d5ee171c3598fbdb1dd7e31 = L.circleMarker(
+                [36.2235555, -95.9005058],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_80e53fb32d5ee171c3598fbdb1dd7e31.bindTooltip(
+                `<div>
+                     Mohawk Park--Mary K. Oxley Nature Center (272 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6f75dd6d64969412525645c03b9b70c2 = L.circleMarker(
+                [36.225891, -95.9243434],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_6f75dd6d64969412525645c03b9b70c2.bindTooltip(
+                `<div>
+                     Mohawk Park--North Woods Unit (235 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e4abd2b4ac9c8a958877852ea4b2a60 = L.circleMarker(
+                [36.2253597, -95.8961582],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_1e4abd2b4ac9c8a958877852ea4b2a60.bindTooltip(
+                `<div>
+                     Mohawk Park--Observation Tower (134 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e301803185f0b77200197b9fb9a1f4d = L.circleMarker(
+                [36.2193404, -95.8898789],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_6e301803185f0b77200197b9fb9a1f4d.bindTooltip(
+                `<div>
+                     Mohawk Park--Shelters 5 and 6 (109 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_971a88cf269240dbb0a2305fc2df83f1 = L.circleMarker(
+                [35.8658582, -96.0534762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_971a88cf269240dbb0a2305fc2df83f1.bindTooltip(
+                `<div>
+                     Mounds Settling Ponds (1 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_255a058ae664e1514f45c88c7ee120ec = L.circleMarker(
+                [36.2356891, -95.9357071],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_255a058ae664e1514f45c88c7ee120ec.bindTooltip(
+                `<div>
+                     N. Tulsa Sewage Plant (68 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_855409b87ff9443f4263805ecd7bc3a2 = L.circleMarker(
+                [36.0224802, -95.7472423],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_855409b87ff9443f4263805ecd7bc3a2.bindTooltip(
+                `<div>
+                     Northeastern State University Wetlands (168 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_df73812c840bc60bad8ed7b6425b3457 = L.circleMarker(
+                [36.0190889, -95.9576869],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_df73812c840bc60bad8ed7b6425b3457.bindTooltip(
+                `<div>
+                     Oklahoma Aquarium (64 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_528c0fafe1274180e1b90fae9e04d4f2 = L.circleMarker(
+                [36.1384215, -96.2250561],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_528c0fafe1274180e1b90fae9e04d4f2.bindTooltip(
+                `<div>
+                     Old State Hwy. 51 (79 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cc071a46f6df0926b726c81a22accf6 = L.circleMarker(
+                [36.2704461, -95.9798072],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_1cc071a46f6df0926b726c81a22accf6.bindTooltip(
+                `<div>
+                     Osage Prairie Trail--E 76th St. N to Sperry (91 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a5cab47f710c27ab91895a29738c73cd = L.circleMarker(
+                [36.1603454, -96.0055314],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_a5cab47f710c27ab91895a29738c73cd.bindTooltip(
+                `<div>
+                     Owen Park (51 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81faf3aceb58d10cfed80e9973eb50b0 = L.circleMarker(
+                [36.1230834, -95.9694219],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_81faf3aceb58d10cfed80e9973eb50b0.bindTooltip(
+                `<div>
+                     Philbrook Museum of Art (69 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c9c791d4c96f8ee8aeac2daf190b43ec = L.circleMarker(
+                [36.0376845, -96.1442131],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_c9c791d4c96f8ee8aeac2daf190b43ec.bindTooltip(
+                `<div>
+                     Pretty Water Lake (138 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0da2c311ced849f4d482461386ac1ba = L.circleMarker(
+                [35.962912, -95.893541],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_e0da2c311ced849f4d482461386ac1ba.bindTooltip(
+                `<div>
+                     Prothonotary Pond (113 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2d6c064e1f2fb95e11c442886c81031a = L.circleMarker(
+                [35.9831893, -95.7863241],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_2d6c064e1f2fb95e11c442886c81031a.bindTooltip(
+                `<div>
+                     Ray Harral Nature Park (156 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_244703e6968d99530b9c4f800cd8e027 = L.circleMarker(
+                [36.1189623, -95.9855793],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_244703e6968d99530b9c4f800cd8e027.bindTooltip(
+                `<div>
+                     River Parks East Trail--31st St. (147 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_facc9a10763d3b1ac99c3c820c5cf15c = L.circleMarker(
+                [36.1043853, -95.9839742],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_facc9a10763d3b1ac99c3c820c5cf15c.bindTooltip(
+                `<div>
+                     River Parks East Trail--41st St. (138 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e81978d681852761a26f091ee7ee5514 = L.circleMarker(
+                [36.0824249, -95.9847942],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_e81978d681852761a26f091ee7ee5514.bindTooltip(
+                `<div>
+                     River Parks East Trail--56th St. (76 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e4059e4ec6029be33e72288871feddab = L.circleMarker(
+                [36.1363736, -95.9935086],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_e4059e4ec6029be33e72288871feddab.bindTooltip(
+                `<div>
+                     River Parks East Trail--South Denver Ave. (173 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d8ab14d7ffe7a28990745407b5c0f4ac = L.circleMarker(
+                [36.1338164, -95.9969502],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_d8ab14d7ffe7a28990745407b5c0f4ac.bindTooltip(
+                `<div>
+                     River Parks West Trail--21st St. (93 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1020578376053d93ee866ab19eca050 = L.circleMarker(
+                [36.1207994, -95.9905926],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_c1020578376053d93ee866ab19eca050.bindTooltip(
+                `<div>
+                     River Parks West Trail--Amphitheatre (87 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d979495caf01db0b919ffd05562b8a1 = L.circleMarker(
+                [36.0392876, -95.9620154],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_4d979495caf01db0b919ffd05562b8a1.bindTooltip(
+                `<div>
+                     River Spirit Casino Resort (77 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6244e6dcd66472c8e2b117c35abff900 = L.circleMarker(
+                [36.0632656, -95.9787706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_6244e6dcd66472c8e2b117c35abff900.bindTooltip(
+                `<div>
+                     Riverside Park (98 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bffa9ce58477b1ca5189d693e0f6e87c = L.circleMarker(
+                [36.0081715, -95.9579948],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_bffa9ce58477b1ca5189d693e0f6e87c.bindTooltip(
+                `<div>
+                     S. Evanston Ave. Wetlands (70 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f71bab8f38d1deacaf900b83da189196 = L.circleMarker(
+                [36.1460962, -96.0891653],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_f71bab8f38d1deacaf900b83da189196.bindTooltip(
+                `<div>
+                     Sand Springs Lake (108 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_56aea68f915eb9098131c1179cbb3d9c = L.circleMarker(
+                [35.9853634, -96.134391],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_56aea68f915eb9098131c1179cbb3d9c.bindTooltip(
+                `<div>
+                     Sapulpa Walmart Retention Pond (82 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dca961883fee87ef91e1eb3f78dbcced = L.circleMarker(
+                [36.1932935, -96.1811399],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_dca961883fee87ef91e1eb3f78dbcced.bindTooltip(
+                `<div>
+                     Shell Lake (65 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_023b3223a2ef278f55bfe63e32b15346 = L.circleMarker(
+                [35.9822548, -95.9623299],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_023b3223a2ef278f55bfe63e32b15346.bindTooltip(
+                `<div>
+                     Skyline Lake and Park (37 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_99b34ba36ecb434b70e4130478cffbed = L.circleMarker(
+                [36.0994194, -96.1483839],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_99b34ba36ecb434b70e4130478cffbed.bindTooltip(
+                `<div>
+                     Spring Lake WTP (35 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b6b71952b37b1b75684ef95442e6779 = L.circleMarker(
+                [36.1247263, -95.8902168],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_3b6b71952b37b1b75684ef95442e6779.bindTooltip(
+                `<div>
+                     Terrace Park (67 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c741ff9f666d29d21d7daf629e92f3d3 = L.circleMarker(
+                [36.2081998, -96.0600758],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_c741ff9f666d29d21d7daf629e92f3d3.bindTooltip(
+                `<div>
+                     Tulsa Botanic Garden (142 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_12399821186899584136870714281fe9 = L.circleMarker(
+                [36.040208, -95.86208],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_12399821186899584136870714281fe9.bindTooltip(
+                `<div>
+                     Tulsa Community College Southeast Campus--Nature Path (96 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8b87e07588ab2092ce8d52441cdf00a3 = L.circleMarker(
+                [36.2034211, -95.8847237],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_8b87e07588ab2092ce8d52441cdf00a3.bindTooltip(
+                `<div>
+                     Tulsa International Airport (60 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_016c7242da9985bf43beb66f36f1313a = L.circleMarker(
+                [36.237022, -95.8545448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_016c7242da9985bf43beb66f36f1313a.bindTooltip(
+                `<div>
+                     Tulsa Northside WTP (restricted access) (40 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_20305d1d0a04833727af11fa177b0b4a = L.circleMarker(
+                [36.0856551, -95.9916968],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_20305d1d0a04833727af11fa177b0b4a.bindTooltip(
+                `<div>
+                     Tulsa Southside WTP (restricted access) (65 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_076623045fafb55a20d78eb028b0d3d3 = L.circleMarker(
+                [36.213463, -95.9050655],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_076623045fafb55a20d78eb028b0d3d3.bindTooltip(
+                `<div>
+                     Tulsa Zoo (101 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0784859aeca2fc925f42edcc471bd259 = L.circleMarker(
+                [36.0764286, -95.9913464],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_0784859aeca2fc925f42edcc471bd259.bindTooltip(
+                `<div>
+                     Turkey Mountain Trail (130 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8caf9accef11b60bd4fbb195e13e6265 = L.circleMarker(
+                [36.0663856, -95.9899654],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_8caf9accef11b60bd4fbb195e13e6265.bindTooltip(
+                `<div>
+                     Turkey Mt. Park (152 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_947b2e318497d217b230d356fd697349 = L.circleMarker(
+                [36.1517072, -95.9447206],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_947b2e318497d217b230d356fd697349.bindTooltip(
+                `<div>
+                     University of Tulsa (30 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dcc1579dbe97908cb114161bae5b32b1 = L.circleMarker(
+                [36.1519361, -95.977807],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_dcc1579dbe97908cb114161bae5b32b1.bindTooltip(
+                `<div>
+                     Veterans Park (23 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0fba193421823b6aca1153291ee43388 = L.circleMarker(
+                [35.963151, -95.8890352],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_0fba193421823b6aca1153291ee43388.bindTooltip(
+                `<div>
+                     Washington Irving Park (208 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_176a06ab6bea1f5a48b1342b39f56425 = L.circleMarker(
+                [36.1060948, -95.929863],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_176a06ab6bea1f5a48b1342b39f56425.bindTooltip(
+                `<div>
+                     Whiteside Park (33 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_095678213c1cdad905af3dd406d8d9cc = L.circleMarker(
+                [36.154193, -95.990175],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_095678213c1cdad905af3dd406d8d9cc.bindTooltip(
+                `<div>
+                     Williams Green (134 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_225c012d60ead5b7538bb4777030abb8 = L.circleMarker(
+                [36.1301108, -95.9731293],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_a85e4c12394565b75645117862bfad4f);
+        
+    
+            circle_marker_225c012d60ead5b7538bb4777030abb8.bindTooltip(
+                `<div>
+                     Woodward Park (166 species)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
